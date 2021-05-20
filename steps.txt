@@ -2,28 +2,29 @@
 #https://www.python.org/downloads/release/python-360/
 #Make sure to tick Add to Path checkbox during installation
 
-#Make a directory called chatbot
+#Make a directory called chatbot and clone github repository in it
 mkdir chatbot
 cd chatbot
 
+#Make sure you have configured git in your system
+git clone https://github.com/moharora8/interviewbot.git
+
 #Create Virtual Environment
-virtualenv --python=python3.6 myvenv
+virtualenv --python=python3.6 venv
 
 #Activate Virtual Environment
-cd venv\Scripts
-.\activate
+cd venv/Scripts
+source ./activate
 
 #Make sure you are using python version >=3.6
 python --version
 
-#Coming to home directory
+#Coming to interviewbot directory 
 cd ..
 cd ..
+cd interviewbot
 
-#Clone the chatbot-master directory from this url
-
-
-#Install necessary libraries
+#Install all the required libraries
 pip install -r requirements.txt
 
 #Train model 
