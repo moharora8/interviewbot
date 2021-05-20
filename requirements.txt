@@ -1,0 +1,6 @@
+tensorflow==1.11.0
+tensorlayer==1.11.1
+SpeechRecognition
+nltk
+pickle-mixin
+numpy
